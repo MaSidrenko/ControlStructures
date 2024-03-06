@@ -7,6 +7,8 @@ using::cin;
 using::endl;
 
 //#define SIMPLE_NUM
+//#define UMN_TABLE
+#define PIFAGOR_TABLE
 
 void main() {
 
@@ -31,15 +33,38 @@ void main() {
 	cout << endl;
 	cout << "Всего простых чисел: " << simple_counter;
 #endif // SIMPLE_NUM
-	int a,b;
+
+#ifdef UMN_TABLE
 	for (int i = 1; i <= 10; i++) {
 		for (int j = 1; j <= 10; j++) {
-			a = i * j;
-			cout << i << " * " << j << " = " << a << endl;
+			if (i < 10) cout << " ";
+			cout << i << " * ";
+			if (j < 10) cout << " ";
+			cout << j << " = ";
+			if (i * j < 100) cout << " ";
+			if (i * j < 10) cout << " ";
+			cout << i * j << endl;
+
 
 		}
 		cout << endl;
 	}
-	
+#endif // UMN_TABLE
+
+#ifdef PIFAGOR_TABLE
+	for (int i = 1; i <= 10; i++) {
+		for (int j = 1; j <= 10; j++) {
+			if (i < 10)cout << " ";
+			if (j < 10)cout << " ";
+			if (i * j <= 100)cout << " ";
+			if (i * j < 10)cout << " ";
+			if (i == 10 && j <= 100)cout << " ";
+			if (i <= 9 && j == 10)cout << " ";
+			cout << i * j;
+		}
+		cout << endl;
+	}
+#endif // PIFAGOR_TABLE
+
 
 }
