@@ -12,8 +12,10 @@ void main()
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) 
 		{
-			for (int k = 0; k < n; k++) {
-				for (int l = 0; l < n; l++) {
+			for (int k = 0; k < n; k++) 
+			{
+				for (int l = 0; l < n; l++) 
+				{
 					cout << (i % 2 == k % 2 ? "* " : "  ");
 				}
 			}

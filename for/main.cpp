@@ -210,7 +210,25 @@ void main() {
 	}
 #endif // TRINGLE_4
 
-
+	int n;
+	cin >> n;
+	//for (int i = 0; i < n; i++) {
+	//	for (int j = 0; j < n; j++) {
+	//		for (int l = 0; l < n; l++) {
+	//			for (int k = 0; k < n; k++) {
+	//				cout << (i % 2 == l % 2 ? "* " : "  ");
+	//			}
+	//		}
+	//		cout << endl;
+	//	}
+	//}
+	
+	for (int i = 0; i < n * n; i++) {
+		for (int j = 0; j < n * n; j++) {
+			cout << (i / n % 2 == j / n % 2 ? "* " : "  ");
+		}
+		cout << endl;
+	}
 	}
 	
 
