@@ -15,7 +15,5 @@ void main() {
 		}
 		cout << endl;
 	}
-	cout << (51 & 15) << endl;
-	cout << (25 & 6) << endl;
 
 }
